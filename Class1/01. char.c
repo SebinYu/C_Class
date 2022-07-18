@@ -82,6 +82,7 @@ int main(void) {
 	char food1[7] = "떡볶이";
 	int price1 = 6470000;
 
+	//튀김
 	char food2[9] = "감자튀김";
 	int price2 = 6988000;
 
@@ -94,6 +95,7 @@ int main(void) {
 	char food5[10] = "계란 튀김";
 	int price5 = 70000;
 
+	//기타
 	char food6[5] = "순대";
 	int price6 = 438000;
 
@@ -102,7 +104,8 @@ int main(void) {
 
 	char food8[5] = "오뎅";
 	int price8 = 1480000;
-
+	
+	//돈까스
 	char food9[7] = "돈까스";
 	int price9 = 728000;
 
@@ -112,6 +115,7 @@ int main(void) {
 	char food11[12] = "김치 돈까스";
 	int price11 = 1498000;
 
+	//김밥
 	char food12[5] = "김밥";
 	int price12 = 6470000;
 
@@ -121,18 +125,20 @@ int main(void) {
 	char food14[10] = "김치 김밥";
 	int price14 = 1275800;
 
+	//커피
 	char food15[18] = "아이스 아메리카노";
 	int price15 = 968000;
 
 	char food16[9] = "카페라떼";
 	int price16 = 178000;
 
-	char food17[15] = "카라멜 마끼아또";
+	char food17[16] = "카라멜 마끼아또";
 	int price17 = 9900;
 
 	char food18[10] = "믹스 커피";
 	int price18 = 999999;
 
+	//볶음밥
 	char food19[7] = "볶음밥";
 	int price19 = 690000;
 
@@ -142,6 +148,7 @@ int main(void) {
 	char food21[12] = "계란 볶음밥";
 	int price21 = 4385000;
 
+	//기타
 	char food22[7] = "음료수";
 	int price22 = 190000;
 
@@ -149,29 +156,66 @@ int main(void) {
 	int price23 = 150000;
 
 
-	char prepo1[3] = "은";
-	char prepo2[3] = "는";
-	char prepo3[3] = "을";
-	char prepo4[3] = "를";
-	char prepo5[3] = "의";
-	char prepo6[3] = "등";
-	char prepo7[3] = "과";
-	char prepo8[3] = "원";
-	char prepo9[5] = "어치";
+	char prepoE[3] = "은";
+	char prepoN[3] = "는";
+	char prepoL[3] = "을";
+	char prepoR[3] = "를";
+	char prepoI[3] = "의";
+	char prepoD[3] = "등";
+	char prepoG[3] = "과";
+	char prepoW[3] = "원";
+	char prepoC[5] = "어치";
 
 	char string1[7] = "합치면";
 	char string2[7] = "모자란";
 	char string3[7] = "내야만";
 
 	char dot = '.';
-	char dot1 = ',';
+	char colon = ',';
+
+
+	printf("총 %d명의 사람이 다 함께 음식점에 도착하였다%c\n", customer, dot);
+	printf("총 %d명이 모은 금액은 %d원이다%c\n\n", customer, totalBudget, dot);
+
+	printf("%s%s %d%s %s%c\n",food1,prepoN, price1,prepoW, prepoC, colon);
+	//튀김
+	printf("%s%s %d%s %s%c\n", food2, prepoE, price2, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food3, prepoE, price3, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food4, prepoE, price4, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food5, prepoE, price5, prepoW, prepoC, colon);
+	//기타
+	printf("%s%s %d%s %s%c\n", food6, prepoN, price6, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food7, prepoE, price7, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food8, prepoE, price8, prepoW, prepoC, colon);
+	//돈까스
+	printf("%s%s %d%s %s%c\n", food9, prepoN, price9, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food10, prepoN, price10, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food11, prepoN, price11, prepoW, prepoC, colon);
+	//김밥
+	printf("%s%s %d%s %s%c\n", food12, prepoE, price12, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food13, prepoE, price13, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food14, prepoE, price14, prepoW, prepoC, colon);
+	//커피
+	printf("%s%s %d%s %s%c\n", food15, prepoN, price15, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food16, prepoN, price16, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food17, prepoN, price17, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food18, prepoN, price18, prepoW, prepoC, colon);
+	//볶음밥
+	printf("%s%s %d%s %s%c\n", food19, prepoE, price19, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food20, prepoE, price20, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%c\n", food21, prepoE, price21, prepoW, prepoC, colon);
+	//기타
+	printf("%s%s %d%s %s%c\n", food22, prepoN, price22, prepoW, prepoC, colon);
+	printf("%s%s %d%s %s%s 사먹게 되었다%c\n\n", food23, prepoN, price23, prepoW, prepoC,prepoR, dot);
+
+
 
 	int sum = price1 + price2 + price3 + price4 + price5 + price6 + price7 + price8 + price9 + price10 + price11 + price12 + price13 + price14 + price15 + price16 + price17 + price18 + price19 + price20 + price21 + price22 + price23;
 	int needMoreMoney = sum - totalBudget;
 	float needMoreMoney_perPerson = needMoreMoney / customer;
 
-	printf("위 음식의 가격을 모두 합치면 % d원이고,\n현재 %d원이 부족한 상태다.\n", sum, needMoreMoney);
-	printf("따라서, %d명은 %.0f원을 더 내야만 한다.", customer, needMoreMoney_perPerson);
+	printf("위 음식의 가격을 모두 %s %d원이고%c\n현재 %d원이 %s 상태다%c\n", string1, sum, colon, needMoreMoney,string2, dot);
+	printf("따라서%c %d명은 %.0f원을 더 %s 한다%c\n", colon, customer, needMoreMoney_perPerson, string3, dot);
 
 
 
