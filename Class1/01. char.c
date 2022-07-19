@@ -72,9 +72,8 @@
   printf("%d + %d + %d + %d + %d + %d + %d + %d + %d + %d + %.1f +  %d + %d + %.1f + %d + %d + %d + %.1f + %d + %d + %d + %.1f +  %d + %d + %.1f + %d + %d + %d + %.1f +%.1f + %d +  %d + %d + %d + %d + %d + %d + %.1f + %.1f +  %d + %.1f +  %d + %d + %d + %d + %d = %.1f", a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,a2,b2,c2,d2,e2,f2,g2,h2,i2,j2,k2,l2,m2,n2,o2,p2,q2,r2,a3,b3,c3,d3,e3,f3,g3,h3,i3,j3,sum);
 */
 
-
-int main(void) {
-	//손님 인원, 총 예산
+/*
+//손님 인원, 총 예산
 	int customer = 10;
 	int totalBudget = 100000;
 
@@ -104,7 +103,7 @@ int main(void) {
 
 	char food8[5] = "오뎅";
 	int price8 = 1480000;
-	
+
 	//돈까스
 	char food9[7] = "돈까스";
 	int price9 = 728000;
@@ -211,12 +210,274 @@ int main(void) {
 
 
 	int sum = price1 + price2 + price3 + price4 + price5 + price6 + price7 + price8 + price9 + price10 + price11 + price12 + price13 + price14 + price15 + price16 + price17 + price18 + price19 + price20 + price21 + price22 + price23;
-	int needMoreMoney = sum - totalBudget;
+	float needMoreMoney = sum - totalBudget;
 	float needMoreMoney_perPerson = needMoreMoney / customer;
 
-	printf("위 음식의 가격을 모두 %s %d원이고%c\n현재 %d원이 %s 상태다%c\n", string1, sum, colon, needMoreMoney,string2, dot);
+	printf("위 음식의 가격을 모두 %s %d원이고%c\n현재 %.0f원이 %s 상태다%c\n", string1, sum, colon, needMoreMoney,string2, dot);
 	printf("따라서%c %d명은 %.0f원을 더 %s 한다%c\n", colon, customer, needMoreMoney_perPerson, string3, dot);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	아래 문구에서 ?는 모두 먼저 입력을 받아준 후,
+	아래 문장이 한 번에 나타날 수 있게 만들어주세요.
+
+	오늘의 날짜는 ?월 ?일입니다.
+	제 이름은 ?이고,
+	제 나이는 ?세이고,
+	제 목표는 ?입니다.
+
+
+
+	int month;
+	int date;
+	char name[100];
+	int age;
+	char goal[100];
+
+	printf("이번달을 입력하시오: ");
+	scanf("%d", &month);
+	printf("오늘일자를 입력하시오: ");
+	scanf("%d", &date);
+
+
+	printf("본인의 이름을 입력하시오: ");
+	scanf("%s", &name);
+
+	printf("본인의 나이를 입력하시오: ");
+	scanf("%d", &age);
+
+	printf("본인의 목표를 입력하시오: ");
+	scanf("%s", &goal);
+
+	printf("오늘의 날짜는 %d월 %d일 입니다.\n", month, date);
+	printf("제 이름은 %s이고,\n", name);
+	printf("제 나이는 %d이고,\n", age);
+	printf("제 목표은 %s이고,\n", goal);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+/*int main() {
+	
+	char name1[5];
+	char name2[5];
+	char foodName1[7];
+	char foodName2[5];
+	char foodName3[5];
+	char foodName4[3];
+	char foodName5[5];
+	char foodName6[5];
+	int foodPrice1;
+	int foodPrice2;
+	int foodPrice3;
+	int foodPrice4;
+	int foodPrice5;
+	int foodPrice6;
+
+	//이름
+	printf("첫번째 이름을 입력해주세요: ");
+	scanf("%s", &name1);
+	printf("두번째 이름을 입력해주세요: ");
+	scanf("%s", &name2);
+
+
+	//음식이름, 음식가격
+	printf("첫번째 음식이름을 입력해주세요: ");
+	scanf("%s", &foodName1);
+
+	printf("첫번째 음식이 가격을 입력해주세요: ");
+	scanf("%d", &foodPrice1);
+
+	printf("두번째 음식이름을 입력해주세요: ");
+	scanf("%s", &foodName2);
+	printf("두번째 음식이 가격을 입력해주세요: ");
+	scanf("%d", &foodPrice2);
+
+	printf("세번째 음식이름을 입력해주세요: ");
+	scanf("%s", &foodName3);
+	printf("세번째 음식이 가격을 입력해주세요: ");
+	scanf("%d", &foodPrice3);
+
+	printf("네번째 음식이름을 입력해주세요: ");
+	scanf("%s", &foodName4);
+	printf("네번째 음식이 가격을 입력해주세요: ");
+	scanf("%d", &foodPrice4);
+
+	printf("다섯번째 음식이름을 입력해주세요: ");
+	scanf("%s", &foodName5);
+	printf("다섯번째 음식이 가격을 입력해주세요: ");
+	scanf("%d", &foodPrice5);
+
+	printf("여섯번째 음식이름을 입력해주세요: ");
+	scanf("%s", &foodName6);
+	printf("여섯번째 음식이 가격을 입력해주세요: ");
+	scanf("%d", &foodPrice6);
+
+
+	char prepoE[3] = "은";
+	char prepoN[3] = "는";
+	char prepoL[3] = "을";
+	char prepoR[3] = "를";
+	char prepoI[3] = "의";
+	char prepoD[3] = "등";
+	char prepoG[3] = "과";
+	char prepoW[3] = "원";
+	char prepoC[5] = "어치";
+
+	char string[5] = "지불";
+
+	char dot = '.';
+	char comma = ',';
+
+	int sum = foodPrice1 + foodPrice2 + foodPrice3 + foodPrice4 + foodPrice5 + foodPrice6;
+	int name1TotalPrice = foodPrice1 + foodPrice2 + foodPrice3;
+	int name2TotalPrice = foodPrice4 + foodPrice5 + foodPrice6;
+	int margin = name2TotalPrice - name1TotalPrice;
+
+	printf("%s와 %s%s 함께 음식%s 준비했습니다%c\n", name1, name2, prepoN, prepoL,dot);
+	printf("%s%s %s%c%s%c%s%s 샀습니다%c\n", name1,prepoN, foodName1, comma, foodName2, comma, foodName3, prepoR,dot);
+	printf("%s%s %s%c%s%c%s%s 샀습니다%c\n", name2, prepoN, foodName4, comma, foodName5, comma, foodName6, prepoR, dot);
+	printf("%s%s %d%s%c %s%s %d%s%c %s%s %d%s%입니다%c\n", foodName1, prepoN, foodPrice1, prepoW,comma, foodName2, prepoN, foodPrice2, prepoW, comma, foodName3, prepoN, foodPrice3, prepoW, dot);
+	printf("%s%s %d%s%c %s%s %d%s%c %s%s %d%s%입니다%c\n", foodName4, prepoN, foodPrice4, prepoW, comma, foodName5, prepoN, foodPrice5, prepoW, comma, foodName6, prepoN, foodPrice6, prepoW, dot);	printf("총 합은 %d원이 나왔습니다.\n", sum);
+	printf("%s%s %d%s%s %s하고\n", name1, prepoN, name1TotalPrice, prepoW,prepoL, string);
+	printf("%s%s %d%s%s %s하고\n", name2, prepoN, name2TotalPrice, prepoW, prepoL, string);
+	printf("%s%s %s보다 %d%s%s 더 %s했습니다%c\n", name2, prepoN, name1, margin, prepoW, prepoL, string, dot);
+}*/
+
+/*
+
+	char name[100];
+	char address[100];
+	int age;
+	int gender[100];
+
+
+
+	printf("이름을 입력해주세요: ");
+	scanf("%s", &name);
+	printf("주소를 입력해주세요: ");
+	getchar();
+	gets(address);
+
+	printf("나이를 입력해주세요: ");
+	scanf("%d", &age);
+	printf("성별을 입력해주세요: ");
+	scanf("%s", &gender);
+
+	printf("이름: %s\n", name);
+	printf("주소: %s\n", address);
+	printf("나이: %d\n", age);
+	printf("성별: %s\n", gender);
+*/
+int main() {
+
+	char name1[100];
+	int score1;
+	char goal1[100];
+
+	char name2[100];
+	int score2;
+	char goal2[100];
+
+	char name3[100];
+	int score3;
+	char goal3[100];
+
+	printf("첫번째 이름을 입력해주세요: ");
+	scanf("%s", &name1);
+	printf("점수를 입력해주세요: ");
+	scanf("%d", &score1);
+	printf("목표를 입력해주세요: ");
+	getchar();
+	gets(goal1);
+
+	printf("두번째 이름을 입력해주세요: ");
+	gets(name2);
+	printf("점수를 입력해주세요: ");
+	scanf("%d", &score2);
+	printf("목표를 입력해주세요: ");
+	getchar();
+	gets(goal2);
+
+	printf("세번째 이름을 입력해주세요: ");
+	gets(name3);
+	printf("점수를 입력해주세요: ");
+	scanf("%d", &score3);
+	printf("목표를 입력해주세요: ");
+	getchar();
+	gets(goal3);
+
+	char prepoE[3] = "은";
+	char prepoN[3] = "는";
+	char prepoL[3] = "을";
+	char prepoD[3] = "등";
+
+	char string1[5] = "학점";
+	char string2[3] = "점";
+
+	char dot = '.';
+	char comma = ',';
+	
+	float sum = score1 + score2 + score3;
+	float average = sum / 3;
+
+	printf("%s와 %s와 %s%s 학교에 갔다%c \n", name1, name2, name3, prepoN, dot);
+	printf("%s의 %s%s A이고%c %s의 %s%s B이고%c %s의 %s%s C이다%c\n", name1, string1, prepoE, comma, name2, string1, prepoE, comma, name3, string1, prepoE, dot);
+	printf("%s%s %d%s%s 맞았고%c %s%s %d%s%s 맞았고%c %s%s %d%s%s 맞았다%c\n", name1, prepoN,    score1, string2, prepoL,    comma,     name2, prepoN, score2, string2, prepoL, comma,  name3, prepoN, score3, string2, prepoL, dot);
+	printf("%s의 목표%s %s이고%c %s의 목표%s %s이고%c %s의 목표%s %s이다%c\n", name1, prepoN, goal1, comma, name2, prepoN, goal2, comma, name3, prepoN, goal3, comma);
+	printf("셋의 점수의 합%s %.0f이고%c\n", prepoE, sum, comma);
+	printf("셋의 점수의 평균%s %.0f이다%c\n", prepoE, average, dot);
 
 }
