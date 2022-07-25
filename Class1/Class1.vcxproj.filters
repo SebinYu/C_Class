@@ -18,5 +18,8 @@
     <ClCompile Include="01. char.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2주차 과제.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
