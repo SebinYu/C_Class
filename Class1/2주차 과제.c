@@ -1,5 +1,7 @@
-int main() {
+#include<stdio.h>
 
+/*
+	
 	char name1[100];
 	int score1;
 	char goal1[100];
@@ -57,4 +59,19 @@ int main() {
 	printf("셋의 점수의 합%s %.0f이고%c\n", prepoE, sum, comma);
 	printf("셋의 점수의 평균%s %.0f이다%c\n", prepoE, average, dot);
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
