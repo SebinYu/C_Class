@@ -566,435 +566,1232 @@ int main() {
 	//	- 다시 10번의 기회를 주는데,
 	//	해당 10번의 기회를 3번 더 받을 수 있다.-> 총 30번
 
+	//1
 
-	if (real_answer != user_answer && chance >= 0) {
-		//첫 10번 기회 사이클 경우-scanf 9번 반복- if문 바깥에서 이미 틀린값을 1번 받았기 때문
+	//첫 10번 기회 사이클 경우-scanf 9번 반복- if문 바깥에서 이미 틀린값을 1번 받았기 때문
+	//한동작을 구현하더라도, 구체적으로 각 if문별 변경사항을 분류 해서 만들기 - 각 작동 단계별 할 일 분류하기
+	//if (real_answer != user_answer) -> 변수값 변경
+	//if (chance > 0) -> 기회 더 주기
+	if (real_answer != user_answer ) {
 		fail_count = 1;
 		chance = chance - 1;
 
-		printf("chance: %d, fail_count: %d\n", chance, fail_count);
-		printf("오답입니다.\n");
-		printf("정답을 다시 입력해주세요:");
-		scanf("%d", &user_answer);
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			printf("\n오답이며, 모든 기회를 다 쓰셨습니다. 추가 기회 10번 추가\n");
-			chance = 10;
-		}
-	}
-
-	//-----------------------------------------------
-
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			printf("\n오답이며, 모든 기회를 다 쓰셨습니다. 추가 기회 10번 추가\n");
-			chance = 10;
-		}
-	}
-
-
-	//-----------------------------------------------
-
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			fail_count = fail_count + 1;
-			chance = chance - 1;
-			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
-			printf("오답입니다.\n");
-			printf("정답을 다시 입력해주세요:");
-			scanf("%d", &user_answer);
-		}
-	}
-
-
-	if (real_answer != user_answer) {
-		if (chance >= 0) {
-			printf("\n총 30번 기회를 모두 사용하셨습니다.");
+		if (chance > 0) {
 			printf("chance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//2
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//3
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//4
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
 		}
 	}
 
 
-// 배운점: if문에 한번들어가면 처음에만 판별식을 확인
-	//-> 내부 코드작동중간에 판별식을 만족하지 못해도 모든 내부코드가 끝날때까지 작동한다.
-	//그러므로 if 문으로만 여러번 동작을 시키고 싶다면, 매번 if문+판별식을 새로 작성해주기
-		
+	//5
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
 
-	
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//6
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//7
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//8
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//9
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//10
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+		printf("chance: %d, fail_count: %d\n", chance, fail_count);
+
+		if (chance == 0) {
+			printf("\n오답이며, 모든 기회를 다 쓰셨습니다. 추가 기회 10번 추가\n");
+			chance = 10;
+			printf("chance: %d, fail_count: %d\n", chance, fail_count);
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+
+		}
+	}
+
+	//-----------------------------------------------
+
+	//1
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//2
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//3
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//4
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//5
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//6
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//7
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//8
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//9
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//10
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance == 0) {
+			printf("\n오답이며, 모든 기회를 다 쓰셨습니다. 추가 기회 10번 추가\n");
+			chance = 10;
+			printf("chance: %d, fail_count: %d\n", chance, fail_count);
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+
+		}
+	}
+
+	//-----------------------------------------------
+
+
+	//1
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//2
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//3
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//4
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//5
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//6
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//7
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//8
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+	//9
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+
+		if (chance > 0) {
+			printf("\n\nchance: %d, fail_count: %d\n", chance, fail_count);
+			printf("오답입니다.\n");
+			printf("정답을 다시 입력해주세요:");
+			scanf("%d", &user_answer);
+		}
+	}
+
+
+	//10
+	if (real_answer != user_answer) {
+		fail_count = fail_count + 1;
+		chance = chance - 1;
+		if (chance == 0) {
+			printf("총 30번 기회를 모두 사용하셨습니다.\n");
+			printf("chance: %d, fail_count: %d\n\n", chance, fail_count);
+		}
+	}
 
 
 
-	//	정답이 몇인지 알려주는 프로그램을 개발하고,
-	//	정답일 경우,
-	//	[o]-정답입니다 라는 문장과 함께
-	//	[o]- 다음 문제가 나타나지만,
-	//	정답인 경우에도
-	//	[o]- 이전에 오답 개수가 정답 개수보다 많다면
-	//	[o]- 10번의 기회를 받는다.
+	// 배운점: if문에 한번들어가면 처음에만 판별식을 확인
+		//-> 내부 코드작동중간에 판별식을 만족하지 못해도 모든 내부코드가 끝날때까지 작동한다.
+		//그러므로 if 문으로만 여러번 동작을 시키고 싶다면, 매번 if문+판별식을 새로 작성해주기
 
-	//정답 오답-프로그램 종료 if문
+
+
+
+
+
+	//정답이 몇인지 알려주는 프로그램을 개발하고,
+	//정답일 경우,
+	//[o]-정답입니다 라는 문장과 함께
+	//[o]- 다음 문제가 나타나지만,
+	//정답인 경우에도
+	//[o]- 이전에 오답 개수가 정답 개수보다 많다면
+	//[o]- 10번의 기회를 받는다.
 	int success_count = 0;
 	if (real_answer == user_answer) {
-		printf("정답입니다.");
+		printf("\n정답입니다.\n");
 		success_count = success_count + 1;
 
 		if (success_count < fail_count) {
+			printf("이전에 오답 개수가 정답 개수보다 많기 때문에, 기회 추가 10번\n");
 			chance = chance + 10;
-			printf("chance: %d, fail_count: %d, success_count:%d\n ", chance, fail_count, success_count);
+			printf("chance: %d, fail_count: %d, success_count:%d\n\n ", chance, fail_count, success_count);
 		}
 	}
 
 
 
-	////------------------------------------------------
-	////두번째 문제
-	////숫자 2개 입력
-	//float fa;
-	//float fb;
-	//float user_answer2;
+	//-------------------------------------------------------------------------------------------------------
+	////두번째 문제-1
+	int fa_1 = 10;
+	int fb_1 = 20;
+	int user_answer_1;
+	int real_answer_1;
 
-	//printf("\n첫번째 숫자를 입력해주세요:");
-	//scanf("%f", &fa);
-
-	//printf("두번째 숫자를 입력해주세요:");
-	//scanf("%f", &fb);
+	int fail_count2 = 0;
 
 
-	//printf("1번 %.0f와 2번 %.0f 중에 어떤 숫자가 더 큰지 골라주세요:", fa, fb);
-	//scanf("%f", &user_answer2);
 
-	////대소관계 
-	////fa>fb -> true -> if fa==user_answer2
-	////fa<fb -> true -> if fb==user_answer2
-	//if (fa > fb) {
-	//	if (1 == user_answer2) {
-	//		printf("정답입니다.");
-	//		exit();
-	//	}
-	//	if (1 != user_answer2) {
-	//		printf("오답입니다.\n 정답은 1번입니다.");
-	//	}
-	//}
+	printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+	scanf("%d", &user_answer_1);
 
-	//if (fa < fb) {
-	//	if (2 == user_answer2) {
-	//		printf("정답입니다.");
-	//		exit();
-	//	}
-	//	if (2 != user_answer2) {
-	//		printf("오답입니다.\n 정답은 2번입니다.");
-	//	}
-	//}
+
+	if (fa_1 > fb_1) {
+		real_answer_1 = 1;
+	}
+
+	if (fa_1 < fb_1) {
+		real_answer_1 = 2;
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\nfail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
+
+
+	//----------------------------------------------------
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
+
+	//-------------------------------------------------------------------------------------------------------
+	////두번째 문제-2
+	fa_1 = 20;
+	fb_1 = 10;
+
+	printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+	scanf("%d", &user_answer_1);
+
+
+	if (fa_1 > fb_1) {
+		real_answer_1 = 1;
+	}
+
+	if (fa_1 < fb_1) {
+		real_answer_1 = 2;
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\nfail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
+
+
+	//----------------------------------------------------
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
+
+
+	//-------------------------------------------------------------------------------------------------------
+	////두번째 문제-3
+	fa_1 = 20;
+	fb_1 = 30;
+
+	printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+	scanf("%d", &user_answer_1);
+
+
+	if (fa_1 > fb_1) {
+		real_answer_1 = 1;
+	}
+
+	if (fa_1 < fb_1) {
+		real_answer_1 = 2;
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\nfail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
+
+
+	//----------------------------------------------------
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
+
+	//-------------------------------------------------------------------------------------------------------
+	////두번째 문제-4
+	fa_1 = 30;
+	fb_1 = 40;
+
+	printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+	scanf("%d", &user_answer_1);
+
+
+	if (fa_1 > fb_1) {
+		real_answer_1 = 1;
+	}
+
+	if (fa_1 < fb_1) {
+		real_answer_1 = 2;
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\nfail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
+
+
+	//----------------------------------------------------
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
+
+
+	//-------------------------------------------------------------------------------------------------------
+	////두번째 문제-5
+	fa_1 = 40;
+	fb_1 = 30;
+
+	printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+	scanf("%d", &user_answer_1);
+
+
+	if (fa_1 > fb_1) {
+		real_answer_1 = 1;
+	}
+
+	if (fa_1 < fb_1) {
+		real_answer_1 = 2;
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\nfail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 > fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 1번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
+
+
+	//----------------------------------------------------
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+		}
+
+	}
+
+	if (fa_1 < fb_1) {
+		if (user_answer_1 == real_answer_1) {
+			printf("정답입니다.");
+			exit(1);
+		}
+
+		if (user_answer_1 != real_answer_1) {
+			fail_count2 = fail_count2 + 1;
+			if (fail_count2 >= 3) {
+				printf("\n\n오답입니다. 정답은 2번입니다.\n3번 기회 모두소진 - 문제를 처음부터 다시 풀어주세요.\n");
+				exit(1);
+			}
+
+			if (fail_count2 < 3) {
+				printf("\n\n오답입니다.\n fail_count: %d\n", fail_count2);
+				printf("1번 %d와 2번 %d 중에 더 큰 숫자의 번호를 골라주세요:", fa_1, fb_1);
+				scanf("%d", &user_answer_1);
+			}
+
+
+		}
+	}
 }
