@@ -552,6 +552,8 @@ int main() {
 	scanf("%d", &b);
 
 
+
+
 	//+식, scanf 사용자 정답
 	int user_answer;
 	printf("%d + %d =", a, b);
