@@ -539,7 +539,7 @@
 
 
 */
-int main() {
+/*int main() {
 
 	//첫번째 문제
 	//숫자 2개입력
@@ -1795,5 +1795,187 @@ int main() {
 
 
 		}
+	}
+}*/
+
+/*int main() {
+	int food_num = 0;
+	int food_price;
+	int user_price_num;
+	int user_food_num;
+	int total_price = 0;
+	printf("다음 세 가지 중 고르시오.\n1. 감자. 2.옥수수 3. 수박\n");
+	scanf("%d", &food_num);
+
+	if (food_num == 1) {
+		printf("1번 감자를 선택하셨습니다.\n");
+		printf("1천원어치, 2천원어치 3천원어치\n");
+		scanf("%d", &user_price_num);
+
+		if (user_price_num == 1) {
+			printf("감자 1천원어치를 선택하셨습니다.\n");
+			food_price = 1000;
+		}
+
+		if (user_price_num == 2) {
+			printf("감자 2천원어치를 선택하셨습니다.\n");
+			food_price = 2000;
+		}
+
+		if (user_price_num == 3) {
+			printf("감자 3천원어치를 선택하셨습니다.\n");
+			food_price = 3000;
+		}
+	}
+
+
+
+	if (food_num == 2) {
+		printf("1번 옥수수를 선택하셨습니다.\n");
+		printf("4천원어치, 5천원어치 6천원어치\n");
+		scanf("%d", &user_price_num);
+
+		if (user_price_num == 1) {
+			printf("옥수수 4천원어치를 선택하셨습니다.\n");
+			food_price = 4000;
+		}
+
+		if (user_price_num == 2) {
+			printf("옥수수 5천원어치를 선택하셨습니다.\n");
+			food_price = 5000;
+		}
+
+		if (user_price_num == 3) {
+			printf("옥수수 6천원어치를 선택하셨습니다.\n");
+			food_price = 6000;
+		}
+
+	}
+
+
+
+	if (food_num == 3) {
+		printf("1번 수박을 선택하셨습니다.\n");
+		printf("10천원어치, 20천원어치, 30천원어치\n");
+		scanf("%d", &user_price_num);
+
+		if (user_price_num == 1) {
+			printf("수박 10000원어치를 선택하셨습니다.\n");
+			food_price = 10000;
+		}
+
+		if (user_price_num == 2) {
+			printf("수박 20000원어치를 선택하셨습니다.\n");
+			food_price = 20000;
+		}
+
+		if (user_price_num == 3) {
+			printf("수박 30000원어치를 선택하셨습니다.\n");
+			food_price = 30000;
+		}
+	}
+
+	printf("몇개를 주문하시겠습니까?\n");
+	scanf("%d", &user_food_num);
+	total_price = food_price * user_food_num;
+	printf("%d원어치 * %d개\n", food_price, user_food_num);
+	printf("총 금액은 %d입니다.\n", total_price);
+}*/
+
+/*int main() {
+	int score;
+	char user_grade;
+
+	char real_grade;
+
+	printf("점수를 입력해주세요:");
+	scanf("%d", &score);
+	printf("학점을 입력해주세요:");
+	getchar();
+	scanf("%c", &user_grade);
+
+
+	if (score >= 100) {
+		real_grade = 'A';
+	}
+
+	if (score >= 90 && score < 100) {
+		real_grade = 'B';
+	}
+
+	if (80 <= score && score < 90) {
+		real_grade = 'C';
+	}
+
+	if (70 <= score && score < 80) {
+		real_grade = 'D';
+	}
+
+	if (60 <= score && score < 70) {
+		real_grade = 'E';
+	}
+
+	if (50 <= score && score < 60) {
+		real_grade = 'F';
+	}
+
+	printf("real_grade: %c,user_grade: %c\n", real_grade, user_grade);
+	if (real_grade == user_grade) {
+		printf("올바른 학점입니다.");
+	}
+
+	if (real_grade != user_grade) {
+		printf("올바르지 않은 학점입니다.");
+	}
+}*/
+
+int main() {
+	int extra_money;
+	int first_budget = 10000;
+
+	int food1_price;
+	int food2_price;
+	int food3_price;
+	
+	int food1_count;
+	int food2_count;
+	int food3_count;
+
+	int food1_total_price;
+	int food2_total_price;
+	int food3_total_price;
+
+
+	printf("추가 용돈을 입력해주세요: ");
+	scanf("%d", &extra_money);
+
+	int remaining_budget = first_budget + extra_money;
+	printf("현재 남은 돈: %d", remaining_budget);
+
+
+	printf("떡볶이 금액: ");
+	scanf("%d", food1_price);
+
+	printf("우동 금액: ");
+	scanf("%d", food2_price);
+
+	printf("과자 금액: ");
+	scanf("%d", food3_price);
+
+	printf("떡볶이를 몇 개 주문하시겠습니까?");
+	scanf("%d", food1_count);
+
+	food1_total_price = food1_price * food1_count;
+	
+
+	if (remaining_budget >= food1_total_price) {
+		printf("떡볶이 총 가격: %d", food1_total_price);
+		remaining_budget = remaining_budget - food1_total_price;
+		printf("현재 잔금은 %d 입니다.", remaining_budget);
+	}
+	
+	if (remaining_budget < food1_total_price) {
+		int lacking_amount = food1_total_price - remaining_budget;
+
 	}
 }
